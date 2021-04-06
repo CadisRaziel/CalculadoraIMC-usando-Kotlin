@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/gray">
+<!--para colocar o background é aqui em cima /\-->
+<!--action bar, va na pasta res > values > themes > themes.xml e altere a colorPrimary-->
+<!--status bar, va na pasta res > values > themes > themes.xml e altere a colorPrimaryDark-->
+<!--android:inputType="numberDecimal" = para receber numesmo float ou double-->
+
+
+    <EditText
+        android:id="@+id/txt_edit_peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso"
+        android:maxLength="3"
+        android:textColorHint="@color/dark_blue"
+        android:padding="20dp"
+        android:inputType="number"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+
+    <EditText
+        android:id="@+id/txt_edit_altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Altura"
+        android:maxLength="4"
+        android:textColorHint="@color/dark_blue"
+        android:padding="20dp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular IMC"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/light_blue"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+
+    <TextView
+        android:id="@+id/txt_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textColor="@color/dark_blue"
+        android:gravity="center"
+        android:layout_marginTop="30dp"/>
+    
+    
+    
+    
+    </LinearLayout>
