@@ -1,0 +1,28 @@
+criando icones com kotlin
+
+com o botão direito clique na pasta "app" > "new" e vá até em "vector Assets" clique nele 
+e depois clique 2x em Clip Art
+
+criando um menu no action bar para por o icone
+na pasta "res" clique com o botão direito > "new" > "android resource file">
+no "resource type" coloque |menu| e no "file name" coloque um |nome| para ele  e aperte OK
+veja que dentro de "res" ele vai criar uma pasta "menu" com o arquivo xml para realizar o layout dele.
+
+código no split do menu para por o icone 
+ <item
+        android:id="@+id/reset"
+        android:title=""
+        android:icon="@drawable/ic_reset"
+        app:showAsAction="ifRoom" />
+
+depois disso precisamos associa-lo no codigo no mainActivity.kt
+
+no mainActivity.kt
+antes da ultima } clique com o botão direito na tela vai aparecer "Generate" > "Override Methods" e digite "OnCreateOptionsMenu" e selecione ele
+
+para adicionar funcionalidade ao icone
+abaixo do metodo criado para incluir o icone
+clique com o botão direito "Generate" > "Override Methods" > e digite "onOptionsItemSelected"
+
+
+no mainActivity.kt tem o codigo completo
